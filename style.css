@@ -1,0 +1,574 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: whitesmoke;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    animation: slideRight 1s ease forwards;
+}
+
+.logo span {
+    color: #FF9900;
+}
+
+.navbar a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    animation: slideLeft 1s ease forwards;
+}
+
+.navbar a.active {
+    color: #FF9900;
+}
+
+.navbar a:hover{
+    color: #FF9900;
+}
+
+.home {
+    padding: 50px 20px;
+    background-color: black;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0px 0px 10px 5px #FF9900;
+}
+
+.home-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.home-content span{
+    color: #e79c2c;
+}
+
+.home h1, .home h2, .home h3 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.home h1 {
+    font-size: 36px;
+    animation: slideRight 1s ease forwards;
+}
+
+.home h2 {
+    font-size: 30px;
+}
+
+.home h3 {
+    font-size: 24px;
+    animation: slideLeft 1s ease forwards;
+}
+
+.home p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: white;
+    animation: slideRight 1s ease forwards;
+}
+
+.home-sci a {
+    font-size: 32px;
+    margin: 0 10px;
+    text-decoration: none;
+    animation: slideRight 1s ease forwards;
+}
+
+.home-sci .insta{
+    color: palevioletred;
+}
+
+.home-sci .Twitt{
+    color: rgb(124, 126, 233);
+}
+
+.home-sci .link{
+    color: darkblue;
+}
+.btn-box {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px;
+    color: white;
+    animation: slideLeft 1s ease forwards;
+    border: 1px solid #FF9900;
+    transition: 0.3s;
+}
+
+.btn-box:hover {
+    background-color: #FF9900;
+    color: #fff;
+    border-radius: 10px 30px;
+}
+
+
+
+.img {
+    text-align: center; 
+    margin-top: 0;
+}
+
+.img img {
+    max-width: 100%; 
+    height: 250px; 
+    display: block; 
+    margin: 0 auto;
+}
+
+
+
+.about {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: black;
+    box-shadow: 0px 0px 10px 3px #FF9900;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: whitesmoke;
+    animation: slideRight 1s ease forwards;
+}
+
+.about span {
+    color: #FF9900;
+}
+
+.about h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: whitesmoke;
+    animation: slideLeft 1s ease forwards;
+}
+
+
+.about p {
+    box-shadow: 0px 0px 10px 1px #FF9900;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: whitesmoke;
+    line-height: 1.9;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+
+.quote {
+    margin-top: 30px;
+    font-style: italic;
+    font-size: 20px;
+    color: #FF9900;
+    line-height:1.8 ;
+}
+
+
+.skill {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.my-skill h4{
+    font-size: 23px;
+    animation: slideRight 1s ease forwards;
+}
+
+.my-skill h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    animation: slideLeft 1s ease forwards;
+}
+
+.my-skill span {
+    color: #FF9900;
+}
+
+.skill-left,
+.skill-right {
+    width: 70%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.skill h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.skill-bar {
+    margin-bottom: 30px;
+}
+
+.skill-bar .info {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.skill-bar .bar {
+    background: #f7f7f7;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill-bar .bar span {
+    display: block;
+    height: 100%;
+}
+
+.skill-bar .bar .html {
+    background: #FF9900;
+    width: 90%;
+    animation: html 2s;
+}
+
+.skill-bar .bar .css {
+    background: #FF9900;
+    width: 75%;
+    animation: css 3s;
+}
+
+.skill-bar .bar .javascript {
+    background: #FF9900;
+    width: 60%;
+    animation: javascript 4s;
+}
+
+.skill-bar .bar .sql {
+    background: #FF9900;
+    width: 75%;
+    animation: react 5s;
+}
+
+.skill-bar .bar .powerbi {
+    background: #FF9900;
+    width: 70%;
+    animation: react 5s;
+}
+
+.skill-bar .bar .jQuery {
+    background: #FF9900;
+    width: 50%;
+    animation: react 5s;
+}
+
+.skill-bar .bar .creativity {
+    background: #FF9900;
+    width: 85%;
+    animation: creativity 2s;
+}
+
+.skill-bar .bar .Teamwork {
+    background: #FF9900;
+    width: 90%;
+    animation: teamwork 3s;
+}
+
+.skill-bar .bar .communication {
+    background: #FF9900;
+    width: 80%;
+    animation: communication 4s;
+}
+
+.skill-bar .bar .problemsolving{
+    background: #FF9900;
+    width: 75%;
+    animation: problemsolving 5s;
+}
+
+
+@keyframes creativity{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+
+@keyframes communication{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+@keyframes teamwork{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes problemsolving {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 75%;
+    }
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+
+@keyframes sql{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+
+@keyframes powerbi{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+@keyframes jQuery{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 55%;
+    }
+}
+
+footer {
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 3px #FF9900;
+}
+
+.home-sci a {
+    font-size: 30px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer p {
+    font-size: 18px;
+    color: black;
+}
+
+footer i {
+    font-size: 16px;
+    color: black;
+}
+
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+.project {
+    text-align: center;
+    box-shadow: 0px 0px 10px 3px #FF9900;
+  }
+  
+  .project1 {
+    background-color: black;
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 2.5em;
+    color: whitesmoke;
+    animation: slideLeft 1s ease forwards;
+  }
+  
+  span {
+    color: #FF9900;
+  }
+  
+.box1 , .box2, .box3 {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    height: 480px;
+    margin-top: 30px;
+    box-shadow: 0px 0px 10px 1px #FF9900;
+    border-radius: 20px;
+}
+
+.box1, .box2, .box3 p{
+    font-size: 30px;
+    color: white;
+}
+
+.box1 h3,p{
+    margin-top: 10px;
+}
+
+.box1, .box2, .box3 h3{
+    font-size: 30px;
+    color: white;
+}
+
+.img1{
+    max-width: 100%;
+    height: 100px;
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.img1:hover{
+    transform: rotate(360deg) scale(1.2);
+}
+
+.box1 button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: black;
+    border: 2px solid #FF9900;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+.box2 button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: black;
+    border: 2px solid #FF9900;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}  
+
+.box1  button:hover{
+    background-color: #FF9900;
+    border-radius: 10px 30px;
+}  
+
+.box2  button:hover{
+    background-color: #FF9900;
+    border-radius: 10px 30px;
+}  
+
+.box3 button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: black;
+    border: 2px solid #FF9900;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}  
+
+.box3  button:hover{
+    background-color: #FF9900;
+    border-radius: 10px 30px;
+}  
